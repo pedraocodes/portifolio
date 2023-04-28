@@ -28,10 +28,6 @@ main {
     box-shadow: 10px 10px 10px black;
 }
 
-main h1 {
-    min-width: 280px;
-}
-
 p {
     text-align: justify;
 }
@@ -40,7 +36,7 @@ h1 {
     font-family: 'Press Start 2P', 'Times New Roman', Times, serif;
     color: #404E4D;
     font-weight: bolder;
-    font-size: 40px;
+    font-size: min(48px, 6vw);
     text-shadow: 2px 2px 0px black;
     
 }
