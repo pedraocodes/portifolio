@@ -2,45 +2,112 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Phudu:wght@300;400;500;600;700;800;900&display=swap');
 
 @font-face {
     font-family: 'California';
-    src: url('fonts/California\ Paradise.otf') format('opentype');
-    font-weight: bolder;
+    src: url('fonts/dealerplate\ california.otf') format('opentype');
+    font-weight: normal;
     font-style: normal;
 }
 
+:root {
+    --cor0: #9B9987;
+    --cor1: #343434;
+    --cor2: #0F2A4D;
+    --cor3: #2970CC;
+    --cor4: #73A4E6;
+    --cor5: #9FFFF5;
+    --cor6: #82FF9E;
+
+    --fonte-padrao: 'Work Sans', Arial, Helvetica, sans-serif;
+    --fonte-especial: 'Press Start 2P', 'Times New Roman', Times, serif;
+    --fonte-especial2: 'Phudu', 'Times New Roman', Times, serif;
+}
+
 * {
-    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-family: var(--fonte-padrao);
+    padding: 0px;
+    margin: 0px;
 }
 
 body{
-    background-color: #307EFC;
+    background-color: var(--cor1);
+}
+
+header {
+    padding: 20px;
+    background-image: linear-gradient(to bottom, #0F2A4D, #2970CC, #73A4E6);
+}
+
+header h1 {
+    font-family: var(--fonte-especial);
+    color: black;
+    font-weight: bolder;
+    font-size: min(48px, 6vw);
+    text-align: center;
+    text-shadow: 2px 2px 0px white;
+    padding: 20px;
 }
 
 main {
-    background-color: #DBDBDB;
-    border-radius: 15px;
+    background-color: white;
     max-width: 900px;
     padding: 15px;
     margin: auto;
     text-align: center;
-    box-shadow: 10px 10px 10px black;
 }
 
-p {
+main img {
+    padding: 25px 0px;
+}
+
+main p {
+    font-size: 18px;
     text-align: justify;
+    text-indent: 30px;
+    line-height: 25px;
 }
 
-h1 {
-    font-family: 'Press Start 2P', 'Times New Roman', Times, serif;
-    color: #404E4D;
-    font-weight: bolder;
-    font-size: min(48px, 6vw);
-    text-shadow: 2px 2px 0px black;
-    
-}
-
-h2 {
+main h2 {
+    background-image: linear-gradient(to right, transparent, #0F2A4D, transparent);
+    font-family: var(--fonte-especial2);
+    color: white;
     font-size: 26px;
+    font-weight: normal;
+    text-align: center;
+    text-shadow: 1px 1px 1px black;
+    padding: 5px 10px;
+    margin: 10px -15px;
+}
+footer {
+    background-color: black;
+    color: white;
+    padding: 30px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer h2 {
+    padding: 5px;
+}
+
+div.link-img {
+    display: flex;
+    padding: 5px;
+    position: relative;
+}
+
+div.link-img > p {
+    position: absolute;
+    top: 10px;
+    left: 45px;
+
+}
+
+footer > p {
+    padding: 5px;
 }
