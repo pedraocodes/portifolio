@@ -76,6 +76,19 @@ main p {
     padding: 5px;
 }
 
+main > p > a {
+    color: var(--cor2);
+    text-decoration: none;
+}
+
+main > p > a::after {
+    content: '\00A0\1F517';
+}
+
+main > p > a:hover {
+    text-decoration: underline;
+}
+
 main h2 {
     background-image: linear-gradient(to right, transparent, #0F2A4D, transparent);
     font-family: var(--fonte-especial2);
@@ -103,6 +116,8 @@ footer a {
     text-decoration: none;
 }
 
+
+
 footer h2 {
     padding: 5px;
 }
@@ -117,7 +132,10 @@ div.link-img > p {
     position: absolute;
     top: 10px;
     left: 45px;
+}
 
+div.link-img > p > a:hover {
+    font-weight: bold;
 }
 
 footer > p {
