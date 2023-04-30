@@ -38,8 +38,8 @@ body{
 header {
     padding: 20px;
     border: solid 5px black;
-    border-radius: 40px;
-    margin: 20px 20px 0px 20px;
+    
+    margin: 0px 0px 0px 0px;
     background-image: linear-gradient(to bottom, #73A4E6, #2970CC, #0F2A4D);
 }
 
